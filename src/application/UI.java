@@ -59,10 +59,10 @@ public class UI {
 			if (chessMatch.getCheck()) {
 				System.out.println("CHECK !");
 			} 
-			else {
-				System.out.println("CHECKMATE!");
-				System.out.println("Winner: "+ chessMatch.getCurrentPlayer());
-			}
+		}
+		else {
+			System.out.println("CHECKMATE!");
+			System.out.println("Winner: "+ chessMatch.getCurrentPlayer());
 		}
 	}
 
@@ -114,7 +114,6 @@ public class UI {
 		System.out.print(ANSI_WHITE);
 		System.out.println(Arrays.toString(white.toArray()));
 		System.out.print(ANSI_RESET);
-		System.out.println("Captures pieces:");
 		System.out.print("Black: ");
 		System.out.print(ANSI_YELLOW);
 		System.out.println(Arrays.toString(black.toArray()));
